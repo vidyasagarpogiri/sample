@@ -1,0 +1,6 @@
+<h1>Book#new</h1> <%= link_to 'back', books_path %><br><hr>
+<%= form_for @book do |b|%>
+Title: <%= b.text_field :title%><br>
+Author:<%= b.text_field :author%><br>
+<%=b.submit 'Create'%>
+<% end %>

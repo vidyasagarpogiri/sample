@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+  get 'books/index'
+
   get 'computers/index'
 
-  resources :shoes
+  resources :shoes, :books
   resources :computers, :path => '/'
 
   # The priority is based upon order of creation: first created -> highest priority.

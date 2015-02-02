@@ -1,0 +1,7 @@
+<h1>Books#index</h1> <%= link_to 'new', new_book_path %><br><hr>
+<% @books.each do |b|%>
+Title: <%= b.title%><br>
+Author:<%= b.author%><br>
+<%= link_to 'Edit',edit_book_path(b.id)%>
+<%= link_to 'Delete',book_path(b.id),method: :delete, data: {confirm: "Are u sure"}%><hr>
+<% end %>
