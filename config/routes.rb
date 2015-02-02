@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   get 'computers/index'
 
-  resources :shoes,:computers
+  resources :shoes
+  resources :computers, :path => '/'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
