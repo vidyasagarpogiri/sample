@@ -1,0 +1,6 @@
+<h1>Computer#New</h1> 
+<%= form_for @computer do |c|%>
+Brand :<%=c.text_field :brand%> <br>  
+Price :<%= c.text_field :price%> <br> 
+<%=c.submit 'Create' %>
+<% end %><hr>

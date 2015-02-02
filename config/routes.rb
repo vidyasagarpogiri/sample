@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :shoes
+  get 'computers/index'
+
+  resources :shoes,:computers
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
