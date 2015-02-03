@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
-  get 'books/index'
+  get 'employees/index'
 
-  get 'computers/index'
+  get 'employees/new'
 
-  resources :shoes, :books
+  #get 'books/index'
+
+  #get 'computers/index'
+
+  resources :shoes, :books, :employees
   resources :computers, :path => '/'
 
   # The priority is based upon order of creation: first created -> highest priority.

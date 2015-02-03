@@ -1,0 +1,9 @@
+<h1>Employees#index</h1>
+<h3><%= link_to 'New Employee',new_employee_path%></h3><br>
+<% @employees.each do |emp| %>
+NAME:<%= emp.name%><br>
+SALARY:<%= emp.salary%><br>
+<%= link_to 'Edit',edit_employee_path(emp.id)%><br>
+<%= link_to 'Delete',employee_path(emp.id),method: :delete,data: {confirm: "r u sure" }%><br><hr>
+<% end %>
+<%# link_to 'Delete',book_path(b.id),method: :delete, data: {confirm: "Are u sure"}%>	
